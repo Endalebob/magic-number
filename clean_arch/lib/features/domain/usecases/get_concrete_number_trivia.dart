@@ -7,7 +7,7 @@ import 'package:equatable/equatable.dart';
 
 class GetConcreteNumberTrivia implements UseCase<NumberTrivia, Params> {
   final NumberTriviaRepository numberTriviaRepository;
-  GetConcreteNumberTrivia({required this.numberTriviaRepository});
+  GetConcreteNumberTrivia(this.numberTriviaRepository);
 
   @override
   Future<Either<Failure, NumberTrivia>?> call(Params params) async {
